@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>测试</title>
+	<script type="text/javascript" src="../jquery/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="drag.js"></script>
+	<style>
+		#drapbox{
+			width: 100px;
+			height: 100px;
+			position: absolute;
+			top: 100px;
+			left: 100px;
+			background-color: #eee;
+			cursor: move;
+		}
+		#coor{
+			position: absolute;
+			width: 10px;
+			height: 10px;
+			background-color: #235454;
+			right: -10px;
+			bottom: -10px;
+		}
+		#infomation{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			overflow: auto;
+		}
+	</style>
+</head>
+<body>
+	<div id="drapbox">
+	<div id="infomation" contenteditable="true"></div>
+		<div id="coor"></div>
+	</div>
+
+	<script type="text/javascript">
+		$(function(){
+			$("#box").drap();
+		});
+	</script>
+</body>
+</html>
